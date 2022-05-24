@@ -1,0 +1,44 @@
+asíncrono: não ocorre e nem se efetiva ao mesmo tempo
+síncrono: é feito na hora que você que você está usando
+
+javascript por padrão roda de forma síncrona
+
+promises: objeto de processamento assíncrono, inicialmente, seu valor é desconhecido, pode ser resolvida ou rejeitada.
+1- pending
+2- fulfilled
+3- rejected
+
+ESTRUTURA PROMISE
+
+const MyPromise = new Promise((resolve,reject)=>{
+    window.setTimeout(()=>{
+        resolve('Resolvida!')
+    }, 2000)
+})
+
+ASYNC E AWAIT
+async serve para funções assíncronas
+await faz com que só faça depois da promisse resolver
+
+async function resolvePromise(){
+const MyPromise = new Promise((resolve,reject)=>{
+    window.setTimeout(()=>{
+        resolve('Resolvida!')
+    }, 3000)
+})
+}
+
+const resolved = await MyPromise
+.then((result)=> result + 'passado pelo then')
+
+
+APIs e Consumos
+Application Programing Interface.
+intermidedia os resultados do backends e podemos acessálas pela URL
+é comum que a API retornemm os dados em .JSON
+
+FETCH() -> Retorna uma promise
+fetch(url,options)
+.then(response => response.json())
+.then(json => console.log(json))
+

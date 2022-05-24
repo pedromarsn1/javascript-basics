@@ -1,0 +1,31 @@
+PARADIGMAS DA PROGRAMAÇÃO
+Imperativo -> como resolver os problemas (programação a objetos)
+Decorativo -> o que você fazer (banco de dados)
+
+PROGRAMAÇÃO ORIENTADA A OBJETOS
+programas são objetos que possuem várias propriedades.
+pilares: herança, polimorfismo, encapsulamento e abstração
+
+ABSTRAÇÃO: processo mental que isola um aspecto de coisas relativamente complexo para simplificar a avaliação para permitir a comunicação do mesmo.
+
+HEREANÇA: herdam propriedades dos pais, mas eles tem suas própias características
+
+ENCAPSULAMENTO:  cada classe rem propriedades e metodos independesntos do resto do código
+
+POLIMORFISMO: se comportam de forma diferente quando invocamenos seus metodos mas eles tem a mesma classe pai
+
+
+
+OOJS -> Oriented Objects JavaScript
+
+Protótipos: esqueletos de do objeto. herdam propriedades e métodos de um prototype. O objeto Object.prototype está no topo desta cadeia.
+
+Cadeia de protótipos (prototype chain)
+
+CLASSES: não existem nativamente. Sintaxe sugar -> sintaxe feita para facilitar a escrita
+todas as classe são objetos e a herança se dá por protótipos.
+
+constructor
+getter e setter
+super() -> usa da classe pai
+método makeSound()-> sobrescrever o método
